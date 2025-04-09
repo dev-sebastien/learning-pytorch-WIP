@@ -4,10 +4,10 @@ import torch
 # 2) Compute local gradients
 # 3) Backward pass: Compute dLoss/dWeights using the chain rule
 
-x = torch.tensor(1.0)
-y = torch.tensor(2.0)
+x = torch.tensor(4.0)
+y = torch.tensor(3.0)
 
-w = torch.tensor(1.0, requires_grad=True)
+w = torch.tensor(5.0, requires_grad=True)
 
 #Forward pass:
 y_hat = w * x
